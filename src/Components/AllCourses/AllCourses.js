@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState,useEffect } from 'react';
 import Cart from '../Cart/Cart';
-import './AllCourses.css'
+// import './AllCourses.css'
 
  function AllCourses() {
  // eslint-disable-next-line no-undef
@@ -14,7 +14,7 @@ const [state, setstate] = useState([]);
     .then(data=>setstate(data))
   }, []);
   return (
-  <div className='all-cart'>
+  <div className='container text-center'>
 {
   state.map(data=><Cart
   key={data.id}
